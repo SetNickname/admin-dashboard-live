@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link');
   
@@ -11,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
           link.classList.add('active');
           
-          // Determine navigation based on link text
           const linkText = link.textContent.trim();
           
           switch(linkText) {
