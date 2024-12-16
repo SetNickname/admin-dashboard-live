@@ -1,24 +1,36 @@
-const redirects = {
-  "Dashboard": "admin-dashboard.html",
-  "Orders": "admin-orders.html",
-  "Products": "admin-products.html",
-  "Customers": "admin-customers.html",
-  "Reviews": "admin-reviews.html"
-};
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+          e.preventDefault();
 
-for (const elementId in redirects) {
-  const element = document.getElementById(elementId);
-  if (element) {
-    element.addEventListener("click", function(event) {
-      event.preventDefault();
-      const targetPage = redirects[elementId];
-      if (targetPage) {
-          window.location.href = targetPage;
-      } else {
-        console.error(`No target page defined for element: ${elementId}`);
-      }
+          navLinks.forEach(navLink => navLink.classList.remove('active'));
+
+          link.classList.add('active');
+          
+          // Determine navigation based on link text
+          const linkText = link.textContent.trim();
+          
+          switch(linkText) {
+              case 'Dashboard':
+                  window.location.href = 'admin-dashboard.html';
+                  break;
+              case 'Orders':
+                  window.location.href = 'admin-orders.html';
+                  break;
+              case 'Products':
+                  window.location.href = 'admin-products.html';
+                  break;
+              case 'Customers':
+                  console.alert('Customers page not yet implemented');
+                  break;
+              case 'Reviews':
+                  console.alert('Reviews page not yet implemented');
+                  break;
+              default:
+                console.alert('No navigation defined for this link');
+              }
+            });
+        });
     });
-  } else {
-    console.warn(`Element with ID '${elementId}' not found on this page.`);
-  }
-}
