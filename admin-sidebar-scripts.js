@@ -6,10 +6,19 @@ const redirects = {
   "Reviews": "admin-reviews.html"
 };
 
-document.getElementById("Orders").addEventListener("click", function(event) {
-  // Prevent the default link behavior (if it's an <a> tag)
-  event.preventDefault();
-
-  // Redirect to the desired HTML file
-  window.location.href = "your_target_page.html"; // Replace with your actual filename
-});
+for (const elementId in redirects) {
+  const element = document.getElementById(elementId);
+  if (element) {
+    element.addEventListener("click", function(event) {
+      event.preventDefault();
+      const targetPage = redirects[elementId];
+      if (targetPage) {
+          window.location.href = targetPage;
+      } else {
+        console.error(`No target page defined for element: ${elementId}`);
+      }
+    });
+  } else {
+    console.warn(`Element with ID '${elementId}' not found on this page.`);
+  }
+}
