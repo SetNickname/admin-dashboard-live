@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Products</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -22,34 +22,34 @@
                 </div>
     
                 <ul class="nav-menu">
-                    <li class="nav-item">
+                    <li class="nav-item" id="Dashboard">
                         <a href="#" class="nav-link">
                             <i class="fas fa-chart-bar"></i>
                             Dashboard
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="Orders">
                         <a href="#" class="nav-link active">
                             <i class="fas fa-shopping-cart"></i>
                             Orders
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="Products">
                         <a href="#" class="nav-link">
                             <i class="fas fa-box"></i>
                             Products
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="Customers">
                         <a href="#" class="nav-link">
                             <i class="fas fa-users"></i>
                             Customers
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="Reviews">
                         <a href="#" class="nav-link">
-                            <i class="fas fa-dollar-sign"></i>
-                            Sales
+                            <i class="fa-regular fa-comment"></i>
+                            Reviews
                         </a>
                     </li>
                 </ul>
@@ -74,5 +74,7 @@
                 </ul>
                  </div>
         </div>
+
+        <script scr="admin-sidebar-scripts.js"></script>
     </body>
 </html>
