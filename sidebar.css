@@ -17,6 +17,8 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    padding-top: 3px;
+    scale: 1.1;
 }
 
 .sidebar-header h1 {
@@ -76,17 +78,31 @@
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    grid-template-columns: 3fr 5fr 2fr;
 }
 
-.user-profile img {
+.profile-picture {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 15px;
+    padding-left: 5%;
+    padding-top: 2.3%;
+    scale: 1.25;
+    align-items: center;
+
+    transition: 
+    scale 0.35s ease-out;
+}
+
+.profile-picture:hover {
+    cursor: pointer;
+    scale: 1.5;
 }
 
 .user-details {
     flex-grow: 1;
+    padding-left: 6%;
+    align-items: centerx;
 }
 
 .user-name {
@@ -101,13 +117,14 @@
 
 .logout-btn {
     background: none;
-    border: none;
+    border: 0;
     color: var(--text-secondary);
     cursor: pointer;
-    transition: 
-    scale 0.35s ease-out;
+    align-items: center;
+    scale: 1.1;
+    transition: scale 0.35s ease-out;
 }
 
 .logout-btn:hover {
-    scale: 1.15;
+    scale: 1.25;
 }
