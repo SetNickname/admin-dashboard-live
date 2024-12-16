@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
                   window.location.href = 'admin-products.html';
                   break;
               case 'Customers':
-                  alert('Customers page not yet implemented');
-                  break;
+                window.location.href = 'admin-customers.html';
+                break;
               case 'Reviews':
-                  alert('Reviews page not yet implemented');
-                  break;
+                window.location.href = 'admin-reviews.html';
+                break;
               default:
                   alert('No navigation defined for this link');
               }
