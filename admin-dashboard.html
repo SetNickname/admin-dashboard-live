@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard-sidebar.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="sb-icons/apple.png" alt="Company Logo">
+                <h1>Admin Panel</h1>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fas fa-chart-bar"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        Orders
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-box"></i>
+                        Products
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-users"></i>
+                        Customers
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-regular fa-comment"></i>
+                        Reviews
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="profile-picture">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="user-details">
+                        <div class="user-name">Admin</div>
+                        <div class="user-email">apple@gmail.com</div>
+                    </div>
+                    <a href="#" class="logout-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h2 class="dashboard-title">Dashboard</h2>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-label">Total Sales</div>
+                    <div class="stat-value">Nan</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="stat-label">New Orders</div>
+                    <div class="stat-value">Nan</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-label">Total Customers</div>
+                    <div class="stat-value">Nan</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="stat-label">Pending Shipments</div>
+                    <div class="stat-value">Nan</div>
+                </div>
+            </div>
+
+            <div class="recent-activity">
+                <h3 class="activity-title">Recent Activity</h3>
+                <div class="activity-item">
+                    <div class="activity-details">
+                        <div class="activity-type">New Order</div>
+                        <div class="activity-description">Order #1234 placed by John Doe</div>
+                    </div>
+                    <div class="activity-time">5 minutes ago</div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-details">
+                        <div class="activity-type">Product Update</div>
+                        <div class="activity-description">iPhone 13 stock updated</div>
+                    </div>
+                    <div class="activity-time">1 hour ago</div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-details">
+                        <div class="activity-type">Customer Signup</div>
+                        <div class="activity-description">New customer registration</div>
+                    </div>
+                    <div class="activity-time">3 hours ago</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>
