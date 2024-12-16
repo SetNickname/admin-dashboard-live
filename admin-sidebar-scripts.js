@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
                   window.location.href = 'admin-products.html';
                   break;
               case 'Customers':
-                  console.alert('Customers page not yet implemented');
+                  alert('Customers page not yet implemented');
                   break;
               case 'Reviews':
-                  console.alert('Reviews page not yet implemented');
+                  alert('Reviews page not yet implemented');
                   break;
               default:
-                console.alert('No navigation defined for this link');
+                  alert('No navigation defined for this link');
               }
             });
         });
