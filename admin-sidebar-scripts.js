@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const profilePicture = document.querySelector('.profile-picture');
   
-  navLinks.forEach(link => {
+    navLinks.forEach(link => {
       link.addEventListener('click', (e) => {
           e.preventDefault();
           
@@ -28,4 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
               }
             });
         });
+    profilePicture.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = 'admin-settings.html';
     });
+
+});
